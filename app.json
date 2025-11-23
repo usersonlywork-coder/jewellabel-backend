@@ -1,0 +1,31 @@
+{
+  "name": "jewellabel-backend",
+  "description": "Jewel Label Laravel Backend API",
+  "keywords": ["laravel", "php", "api"],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [],
+  "env": {
+    "APP_KEY": {
+      "description": "Laravel application key",
+      "generator": "secret"
+    },
+    "APP_ENV": {
+      "value": "production"
+    },
+    "APP_DEBUG": {
+      "value": "false"
+    },
+    "LOG_CHANNEL": {
+      "value": "stack"
+    }
+  }
+}
